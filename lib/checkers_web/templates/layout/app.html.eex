@@ -1,0 +1,45 @@
+<!--Template inspired by materialize starter kit
+ citation: http://materializecss.com/templates/starter-template/preview.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Checkers</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+</head>
+<body>
+<header>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Checkers</a>
+        <ul class="right hide-on-med-and-down">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/rules">Rules</a></li>
+              </ul>
+
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</header>
+<main>
+ <%= render @view_module, @view_template, assigns %>
+</main>
+
+  <footer class="page-footer orange">
+
+      <div class="container">
+      Made by <a class=" orange-text text-lighten-3" href="https://github.com/anju-james">Anju James</a>
+      </div>
+
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
+

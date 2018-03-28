@@ -1,0 +1,11 @@
+<div class="container">
+<div class="row">
+  <div class="col s12" id="home_create">
+    <!-- Create game content -->
+  </div>
+  <div class="divider"></div>
+  <div class="col s12 section" id="home_list">
+      <!-- ongoing game list  -->
+  </div>
+</div>
+</div>

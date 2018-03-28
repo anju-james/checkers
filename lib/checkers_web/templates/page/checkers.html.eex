@@ -1,0 +1,8 @@
+<script>
+    window.gameName = "<%= @gamename %>"
+    window.watcher = <%= @watcher %>
+    window.lobbyPath = "<%= page_path(@conn, :home) %>"
+</script>
+<div class="container" id="gamepage">
+Loading...
+</div>
